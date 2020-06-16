@@ -6,6 +6,6 @@ i=1
 echo "there are $# arguments"
 for ARGS
 do
-    echo "arg$i: $ARGS"
+    (( i % 2 == 0 )) && echo "arg$i: $ARGS"
     let i++
 done
